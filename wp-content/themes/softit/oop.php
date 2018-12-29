@@ -33,12 +33,12 @@ echo $perinfo->login();
 */
   class person{
 
-     
+    static $name = "sjujon";
 
     static function set_password(){
-      return "password";
+      return self::$name;
     }
 
   }
 
-  echo person::$set_password();
+  echo person::set_password();
